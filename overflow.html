@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit Content</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+            height: 300px;
+            background-color: rgba(255, 0, 0, .5);
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item {
+            width: fit-content;
+        }
+        
+        .min-content .item {
+            width: min-content;
+        }
+
+        .max-content .item {
+            width: max-content;
+        }
+
+        .overflow-hidden {
+            overflow: hidden;
+        }
+
+        .overflow-auto {
+            overflow: auto;
+        }
+
+        .overflow-scroll {
+            overflow: scroll;
+        }
+
+        .overflow-x-hidden {
+            overflow-x: hidden;
+        }
+
+        .overflow-y-hidden {
+            overflow-y: hidden;
+        }
+
+        .overflow-visible {
+            overflow: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="container fit-content overflow-hidden">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eos?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in maiores cumque optio temporibus accusantium maxime consequatur earum. Voluptatibus accusantium iusto modi nam ab beatae!</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas culpa dolores nulla iste eum nobis, veritatis nam consequuntur quos inventore id sint accusantium enim explicabo aliquid laborum maxime in deleniti saepe porro autem omnis. Dolorum, vel iste voluptatum dolorem sapiente molestiae. Eligendi a unde facere in quo modi natus ratione sequi vitae iusto numquam velit dolorem aliquid dignissimos corrupti, ipsum id aperiam doloremque nostrum quae, accusamus qui laboriosam! Molestias fuga optio modi, odio blanditiis aliquam.</div>
+    </div>
+
+    <div class="container min-content overflow-auto">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eos?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in maiores cumque optio temporibus accusantium maxime consequatur earum. Voluptatibus accusantium iusto modi nam ab beatae!</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas culpa dolores nulla iste eum nobis, veritatis nam consequuntur quos inventore id sint accusantium enim explicabo aliquid laborum maxime in deleniti saepe porro autem omnis. Dolorum, vel iste voluptatum dolorem sapiente molestiae. Eligendi a unde facere in quo modi natus ratione sequi vitae iusto numquam velit dolorem aliquid dignissimos corrupti, ipsum id aperiam doloremque nostrum quae, accusamus qui laboriosam! Molestias fuga optio modi, odio blanditiis aliquam.</div>
+    </div>
+
+    <div class="container max-content overflow-scroll">
+        <div class="item">lorem</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, eos?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in maiores cumque optio temporibus accusantium maxime consequatur earum. Voluptatibus accusantium iusto modi nam ab beatae!</div>
+        <div class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas culpa dolores nulla iste eum nobis, veritatis nam consequuntur quos inventore id sint accusantium enim explicabo aliquid laborum maxime in deleniti saepe porro autem omnis. Dolorum, vel iste voluptatum dolorem sapiente molestiae. Eligendi a unde facere in quo modi natus ratione sequi vitae iusto numquam velit dolorem aliquid dignissimos corrupti, ipsum id aperiam doloremque nostrum quae, accusamus qui laboriosam! Molestias fuga optio modi, odio blanditiis aliquam.</div>
+    </div>
+    
+</body>
+</html>
